@@ -1,0 +1,283 @@
+/*General Styles*/
+* {
+	box-sizing: border-box;
+	margin:0 ;
+	padding: 0;
+}
+
+body {
+	font-family: lato;
+}
+
+.container {
+	background-color: #333;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	width:100%;
+	height: 100vh;
+}
+
+.inner-container {
+	display: flex;
+	width: 70%;
+	flex-direction: column;
+}
+
+
+.mt-20 {
+	margin-top: 20px;
+}
+
+.mb-20 {
+	margin-bottom: 20px;
+}
+
+.mr-10 {
+	margin-right: 10px;
+}
+
+.ml-20 {
+	margin-left: 20px;
+}
+
+/*Login or Join Component Styles*/
+
+.login-container {
+	padding: 15px;
+	color: #f7f7f7;
+	border-radius: 15px;
+	width: 350px;
+	height: 250px;
+}
+
+.login-input {
+	background-color: #fff;
+	border: 0;
+	outline: none;
+	color: #000;
+	border-radius: 35px;
+	width: 100%;
+	margin: 10px 0;
+	padding: 10px 20px;
+}
+
+.login-btn {
+	border: 0;
+	padding: 10px 20px;
+	color: #ccc;
+	background-color: #4caf50;
+	border-radius: 35px;
+	float: right;
+}
+
+/*Chat Styles*/
+.chat-box {
+	display: flex;
+	width: 100%;
+	height: 480px;
+}
+
+.chat-container {
+	background-color: #fff;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+}
+
+.chat-users {
+	width: 20%;
+	background-color: #ccc;
+	overflow: auto;
+}
+
+/*User box Styles*/
+
+.users-container {
+	padding: 5px 15px;
+	margin-top: 20px;
+}
+
+.user-box {
+	padding: 3px 5px;
+	margin: 3px;
+	background-color: #bbb;
+}
+
+.user-box:hover {
+	background-color: #2979ff;
+	color: #fff;
+}
+
+/*Info Bar Styles*/
+
+.info-bar {
+	background-color: #2979ff;
+	padding: 15px 10px;
+	color: #f7f7f7;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 8%;
+}
+.info-close {
+	text-decoration: none;
+	color: #f7f7f7;
+	font-family: lato;
+}
+
+/*Messages/ text area Styles*/ 
+.messages-container {
+	padding: 15px 10px 5px;
+	flex: auto;	
+	overflow: auto;
+}
+
+.message-box {
+	padding: 10px 8px;
+	border-radius: 15px;
+	margin-bottom: 3px;
+	margin-left: 10px;
+	background-color: #ccc;
+	color: #000;
+}
+
+.flex-start {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.flex-end {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.self-color {
+	background-color: #2979ff;
+	color: #f7f7f7;
+}
+
+.admin-color {
+	background-color: #4caf50;
+	color: #f7f7f7;
+}
+
+.message {
+	color: #888;
+	display: flex;
+	flex-direction: column;
+}
+
+/*Input Message Styles*/
+.input-container {
+	border-top: 1px solid #ccc;
+	height: 12%;
+	width: 100%;
+	display:flex;
+} 
+
+.input-input {
+	width: 100%;
+	border: 0;
+	padding: 15px 10px;
+}
+
+.input-button {
+	width: 20%;
+	border: 0;
+	outline: none;
+	background-color: #2979ff;
+	color: #f7f7f7;
+}
+
+
+/*Media Queries for RWD*/
+
+/*Small screen */
+@media only screen and ( max-width: 480px) {
+	.container {
+		width: 100%;
+		height: 100vh;
+	}
+	.inner-container {
+		width: 100%;
+		height: 100vh;
+	}
+	.info-bar {
+		height: 10%;
+	}
+	.chat-box {
+		height: 90%;
+	}
+	.chat-users {
+		display: none;
+	}
+	.chat-container{
+		width: 100%;
+	}
+	.login-container {
+		width: 96%;
+	}
+}
+
+/*Medium screen*/
+@media only screen and (min-width: 480px) {
+	.container {
+		width: 100%;
+		height: 100vh;
+	}
+	.inner-container {
+		width: 90%;
+		height: 90vh;
+	}
+	.info-bar {
+		height: 10%;
+	}
+	.chat-box {
+		height: 90%;
+	}
+	.chat-users {
+		width: 28%;
+	}
+	.chat-container{
+		width: 72%;
+	}
+	.login-container {
+		width: 350px
+	}
+}
+
+/*semi-large screen* 1080px  min*/
+
+@media only screen and (min-width: 992px) {
+	.container {
+		width: 100%;
+		height: 100vh;
+	}
+	.inner-container {
+		width: 45%;
+		height: 490px;
+	}
+	.login-container {
+		width: 350px;
+	}
+}
+
+/*Large screen*/
+
+@media only screen and (min-width: 1480px) {
+	.container {
+		width: 100%;
+		height: 100vh;
+	}
+	.inner-container {
+		width: 30%;
+		height: 550px;
+	}
+	.login-container {
+		width: 350px;
+	}
+}
+
+
+
